@@ -1,0 +1,43 @@
+server:
+  port: 8080
+  context-path: /sdktest  
+  tomcat.uri-encoding: UTF-8
+ 
+#DB Configuration:
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sdk_server
+    username: root
+    password: 1234567890
+  redis:
+    cluster:
+      nodes: 192.168.184.130:6379,192.168.184.130:7379,192.168.184.130:8379
+    maxRedirects: 3
+    timeout: 300000
+    pool:
+      maxActive: 200
+      maxIdle: 50
+      minIdle: 10
+      maxWaitMillis: 15000
+      lifo: true
+      blockWhenExhausted: true
+      testOnBorrow: false
+      testOnReturn: false
+      testWhileIdle: true
+      timeBetweenEvictionRunsMillis: 30000  
+        
+redis:
+  cluster: 
+    maxTotal: 50 
+    maxIdle: 20
+    minIdle: 5
+    maxWait: 5000
+    timeout: 10
+    testOnBorrow: false
+    testOnReturn: false
+    testWhileIdle: true
+    timeBetweenEvictionRunsMillis: 30000
+    nodes: 34.220.26.134:6379,34.220.26.134:7379,34.220.26.134:8379
+    maxRedirects: 30

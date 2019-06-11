@@ -1,0 +1,2 @@
+2019-05-10 17:39:57,897 WARN  o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration[43]: spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2019-05-10 17:40:32,372 WARN  o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration[43]: spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
